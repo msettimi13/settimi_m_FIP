@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule, this is only for demo purposes to make the boxes black with white text
+The line height on the <p> tag gives each box a height value*/
+
+/* p
+{
+	color: #fff;
+	line-height: 100px;
+	background: #000;
+	text-align: center;
+	margin: 0;
+} */
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{
+	font-family: "Abril Fatface", Abril Fatface, Geneva, sans-serif;
+	font-size: 23.48px;
+	color: #eaeaeb;
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+} 
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #eaeaeb;
+	height: 20px;
+}
+
+#headerBox
+{
+	background-color: #0ab4d2;
+	height: 181px;
+}
+
+#bodyBox
+{
+	background-color: #eaeaeb;
+	height: 712px;
+}
+
+#footerBox
+{
+	background-color: #0ab4d2;
+	height: 181px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+/*This is a flex item*/
+#logo
+{
+	width: 200px;
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav 
+{
+	margin-left: auto;
+	width: 500px;
+}
+
+#promo 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+
+
+/*CONTACT PAGE - Notice we are using one style sheet for all of the pages*/
+
+#contentCon {
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#mapArea {
+  width: 380px;
+  margin-left: 90px;
+}
+
+
+#mapArea h3 {
+  font-size: 21px;
+  margin-top: 0;
+  color: #2073a8;
+}
+
+#mapArea ul {
+  list-style-type: none;
+  padding: 0;
+} 
+
+
+/*MENU*/
+
+#productImages 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+}
+
+
+
+
