@@ -10,7 +10,6 @@ Use a modern browser to open the site
 
 HTML
 CSS
-Python
 
 ### Installation
 
