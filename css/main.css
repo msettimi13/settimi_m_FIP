@@ -16,11 +16,18 @@ The line height on the <p> tag gives each box a height value*/
 /*basic reset*/
 /*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
 
-div,p,body,header,footer,section,article,nav 
+div,p,body,header,footer,article 
 { 
 	margin: 0; 
 	padding: 0; 
 }	
+
+nav
+{
+  height: 25px;
+  margin-top: 45px;
+  margin-left: auto;
+}
 
 img 
 { 
@@ -31,11 +38,11 @@ img
 
 /*html selectors*/
 
-body 
+body
 {
 	font-family: "Abril Fatface", Abril Fatface, Geneva, sans-serif;
 	font-size: 23.48px;
-	color: #eaeaeb;
+	color: #0ab4d2;
 }
 
 
@@ -70,7 +77,7 @@ a:hover, a:active
 #headerBox
 {
 	background-color: #0ab4d2;
-	height: 181px;
+	height: 200px;
 }
 
 #bodyBox
@@ -82,7 +89,7 @@ a:hover, a:active
 #footerBox
 {
 	background-color: #0ab4d2;
-	height: 181px;
+	height: 200px;
 }
 
 /*Site Container*/
@@ -98,9 +105,84 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 }
 
 /*This is a flex container*/
+.mainNav
+{
+  width: 500px;
+  height: 25px;
+  margin-top: 60px;
+  margin-left: auto;
+}
+
+.mainNav ul
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+.mainNav ul li {  
+  font-size: 23px;
+  display: inline;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.mainNav ul li a
+{
+  color: #eaeaeb;
+  padding: 5px;
+}
+
+.mainNav ul li a:hover {
+  padding: 5px;
+  background-color: #6c6c70;
+  
+}
+
+.footerNav
+{
+  width: 500px;
+  height: 25px;
+  margin-top: -10px;
+  margin-left: 20px;
+  padding-top: 50px;
+}
+
+.footerNav ul
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+.footerNav ul li {  
+  font-size: 23px;
+  display: inline;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.footerNav ul li a
+{
+  color: #eaeaeb;
+  padding: 5px;
+}
+
+.footerNav ul li a:hover 
+{
+  padding: 5px;
+  background-color: #6c6c70;
+  
+}
+
+.copyRight p
+{
+  margin-left: 1000px;
+  padding-top: 40px;
+  color: #eaeaeb
+}
+
+
 #mainHeader
 {
-	margin-top: 40px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
@@ -109,33 +191,81 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 /*This is a flex item*/
 #logo
 {
-	width: 200px;
+	width: 180px;
+	padding-top: 20px;
 }
 
 /*This is also a flex item*/
 /*We use margin left auto to send it all the way to the right*/
 #mainNav 
 {
-	margin-left: auto;
 	width: 500px;
+  height: 25px;
+  margin-top: 45px;
 }
 
+#footerNav 
+{
+	width: 500px;
+  height: 25px;
+  margin-top: 45px;
+}
 #promo 
 {
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
 }
 
+#promoImage
+{
+	margin-left: 50px;
+	width: fit-content;
+    margin-inline-start: auto;
+    padding-top: 60px;
+    margin-right: 40px;
+}
+
+.promoText
+{
+	font-size: 70px;
+	color: #6c6c70;
+	margin-top: -60px;
+	margin-left: 72px;
+}
+.promoText h2
+{
+	margin-bottom: 0px;
+}
+.promoText p
+{
+	color: #b1b9c7;
+	font-size: 30px;
+	font-family: Geneva;
+	margin-left: 30px;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  margin-right: 20px;
+  margin-left: 43px;
+  padding-top: 64px;
+}
+
+.row:
+{
+  content: "";
+  clear: both;
+  display: table;
+}
 
 
 /*CONTACT PAGE - Notice we are using one style sheet for all of the pages*/
 
 #contentCon {
 	margin-top: 40px;
+	margin-left: 40px;
 	border-bottom: solid 1px #DDD;
 	padding-bottom: 40px;
 	display: flex;
@@ -143,16 +273,103 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
   	justify-content: flex-start;
 }
 
+#mainContact {
+  width: 700px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#mainContact h2 {
+  font-size: 30px;
+  color: #2073a8;
+  background-color: #ddeff7;
+  margin-bottom: 40px;
+  padding: 8px 0px 8px 5px;
+  width: 940px;
+}
+
+#contactArea {
+  width: 469px;
+  border-right: solid 1px #CCC;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+#contactText {
+	margin-left: 60px;
+  font-size: 30px;
+  margin-bottom: 30px;
+  width: 340px;
+  margin-top: 40px;
+  color: #0ab4d2
+}
+
+#contactForm {
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+fieldset {
+  border: none;
+  padding: 0px;
+}
+
+
+input, textarea  {
+  font-size: 11px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 300px;
+  height: 10px;
+  background-color: #eaeaeb;
+  display: block;
+  border: 1px solid #999;
+  color: #333;
+}
+
+#comments {
+  width: 360px;
+  height: 200px;
+}
+
+#submit {
+  display: block;
+  width: 75px;
+  height: 30px;
+  text-align: center;
+  margin-top: 30px;
+  color: #FFF;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #0ab4d2;
+  font-size: 14px;
+  border: 1px solid #6c6c70;
+}
+
 #mapArea {
   width: 380px;
-  margin-left: 90px;
+  margin-left: 150px;
+  margin-top: 40px;
 }
 
 
 #mapArea h3 {
-  font-size: 21px;
+  font-size: 52.61px;
   margin-top: 0;
-  color: #2073a8;
+  color: #0ab4d2;
+}
+
+#mapArea h2 {
+	font-family: Geneva;
+	font-size: 30px;
 }
 
 #mapArea ul {
@@ -161,17 +378,45 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 } 
 
 
+
 /*MENU*/
 
 #productImages 
 {
-	margin-top: 40px;
+	margin-top: 60px;
 	border-bottom: solid 1px #DDD;
 	padding-bottom: 40px;
+	margin: 20px;
 	display: flex;
 	flex-direction: row;
   	justify-content: space-between;
+  	font-family: Geneva;
+  	color: #b1b9c7;
+  	font-size: 21.35px;
 }
+
+
+#contentAreaBig h3 {
+	font-size: 40.75px;
+	padding-left: 350px;
+}
+
+.menuText ul li {
+	font-size: 22.44px;
+	font-family: Geneva;
+}
+
+.menuText h4 {
+	font-size: 30px;
+}
+
+.footerNav ul li {
+	font-family: Abril Fatface;
+}
+
+
+
+
 
 
 

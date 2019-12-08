@@ -7,8 +7,11 @@
 </head>
 <body>
     <h1 class="hidden">Opa Express</h1>
-    <section id="topBar"></section><!--end topBar-->
+    <section id="topBar">
+        <h3 class="hidden">Top Bar</h3>
+    </section><!--end topBar-->
         <section id="headerBox">
+            <h3 class="hidden">Header</h3>
             <div id="siteContainer">
                 <header id="mainHeader">
                     <div class="logoHeader">
@@ -26,21 +29,73 @@
                         </nav>
                 </header> 
             </div>
-        </section>
     </section><!--end mainHeader-->
+
+
         <section id="productImages">
-        	<section class="productImg"><p>Product Image</p></section><!--end productImg1-->
-            <section class="productImg"><p>Product Image</p></section><!--end productImg2-->
-            <section class="productImg"><p>Product Image</p></section><!--end productImg3-->
+            <h3 class="hidden">Photos</h3>
+        	<section class="productImg">
+                <img src="images/chickencaesar.jpg" width="278" height="251" alt="chickencaesar">
+                <h3>Caesar Salad</h3>
+            </section><!--end productImg1-->
+            <section class="productImg">
+                <img src="images/din4.jpg" width="278" height="251" alt="din4">
+                <h3>Chicken Souvlaki Dinner</h3>
+            </section><!--end productImg2-->
+            <section class="productImg">
+                <img src="images/chickenrolldin.jpg" width="278" height="251" alt="chickenrolldin">
+                <h3>Chicken Roll Dinner</h3>
+            </section><!--end productImg3-->
         </section><!--end productImages-->
+
+
         <section id="contentAreaBig">
-        	<p>Content Area</p>
+        	<h3>EAT IN • TAKE OUT • CATERING</h3>
+            <section class="menuText">
+                <h4>SANDWICHES $8.95</h4>
+                    <ul>
+                        <li>Gyro on a Pita</li>
+                        <li>Pork Souvlaki on a Pita</li>
+                        <li>Chicken Souvlaki on a Pita</li>
+                        <li>Veggie on a Pita</li>
+                    </ul>
+                </section>
+            <section class="menuText">
+                <h4>DINNERS $16.95</h4>
+                    <ul>
+                        <li>Gyro Dinner</li>
+                        <li>Chicken Souvlaki Dinner</li>
+                        <li>Pork Souvlaki Dinner</li>
+                        <li>Chevapi Dinner</li>
+                        <li>Chicken Roll Dinner</li>
+                    </ul>
+                </section>
+            <section class="menuText">
+            <h4>SALADS</h4>
+                <ul>
+                    <li>Greek Salad</li>
+                    <li>Caesar Salad</li>
+                    <li>Village Salad</li>
+                </ul>
         </section>
+    </section>
+
+     <section id="footerBox">
+        <h2 class="hidden">Footer</h2>
         <footer id="mainFooter">
-        	<div id="footerNav"><p>Footer Nav</p></div><!--end FooterNav-->
-            <div id="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
+              <nav class="footerNav">
+                <h2 class="hidden">Footer Navigation</h2>
+                    <ul>
+                        <li class="selected"><a href="#">HOME</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </nav>
+           <!--end FooterNav-->
+            <div class="copyRight"><p>© OPA EXPRESS 2019</p></div><!--end Copyright-->
         </footer><!--end mainFooter-->
-    </div><!--end siteContainer-->
+    </section><!--end siteContainer-->
 <script src="js/main.js"></script>    
 </body>
 </html>
