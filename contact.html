@@ -6,12 +6,15 @@
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-    <h1 class="hidden">Opa Express</h1>
-    <section id="topBar"></section><!--end topBar-->
+        <h1 class="hidden">Opa Express</h1>
+             <section id="topBar">
+        <h2 class="hidden">Top Bar</h2>
+             </section><!--end topBar-->
         <section id="headerBox">
             <div id="siteContainer">
                 <header id="mainHeader">
                     <div class="logoHeader">
+                        <h2 class="hidden">Opa Logo</h2>
                         <img src="images/opalogo.png" alt="opalogo" id="logo">
                     </div><!--end logo-->
                 
@@ -23,24 +26,56 @@
                                 <li><a href="#">ABOUT US</a></li>
                                 <li class="selected"><a href="#">CONTACT US</a></li>
                             </ul>
-                        </nav>
+                     </nav>
                 </header> 
             </div>
         </section>
-    </section><!--end mainHeader-->
         <section id="contentCon">
-        	<div id="content1"><p>Content Area 1</p></div><!--end content1-->
+            <h2 class="hidden">Content Area</h2>
+        <section id="contactArea"><!--start contactArea-->
+                <h2 class="hidden">Contact form</h2>
+                <p id="contactText">WE WOULD LOVE TO HEAR FROM YOU!
+                </p> 
+            <form id="contactForm" action="form.php" method="post">
+                    <label for="name">NAME:</label>
+                    <input type="text" required id="name" name="fullName" size="30" placeholder="Enter your name">
+                    
+                    <label for="email">EMAIL:</label>
+                    <input type="email" required id="email" size="30" placeholder="Enter your Email">
+                    
+                    
+                    <label for="phone">PHONE NUMBER:</label>
+                    <input type="tel" required id="phone" size="30" placeholder="Enter Phone Number">
+                    
+                    <label for="comments">COMMENTS:</label>
+                    <textarea name="comments" id="comments" required cols="50" rows="8"></textarea>
+       
+                    <input id="submit" type="submit" value="Submit">
+            </form>
+            </section><!--end content1-->
 <section id="mapArea"><!--start mapArea-->
-                <h3>Visit Us</h3>
+                <h3>VISIT US!</h3>
                 <h2>PHONE:(905)-309-0101</h2>
-                <iframe src="https://www.google.ca/maps/place/44+Livingston+Ave,+Grimsby,+ON+L3M+1L1/@43.1971469,-79.5716454,17z/data=!4m5!3m4!1s0x882ca5785912d7c3:0x10a0333d2712d63c!8m2!3d43.1972237!4d-79.5694355" width="380" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.584538583599!2d-79.57162418457216!3d43.19722758981338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ca5d37d2d40df%3A0x9f092e62280ea429!2sOPA*21%20Express!5e0!3m2!1sen!2sca!4v1575769869040!5m2!1sen!2sca" width="380" height="300" style="border:0;" allowfullscreen></iframe>
 </section><!--end mapArea-->         
 </section><!--end contentCon-->
+    <section id="footerBox">
+        <h2 class="hidden">Footer</h2>
         <footer id="mainFooter">
-        	<div id="footerNav"><p>Footer Nav</p></div><!--end FooterNav-->
-            <div id="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
-        </footer><!--end mainFooter-->
-    </div><!--end siteContainer-->
+              <nav class="footerNav">
+                <h2 class="hidden">Footer Navigation</h2>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li class="selected"><a href="#">CONTACT US</a></li>
+                    </ul>
+                </nav>
+           <!--end FooterNav-->
+            <div class="copyRight"><p>© OPA EXPRESS 2019</p></div>
+
+        </section><!--end Copyright-->
+        </footer>
 <script src="js/main.js"></script>    
 </body>
 </html>

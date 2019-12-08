@@ -7,11 +7,14 @@
 </head>
 <body>
     <h1 class="hidden">Opa Express</h1>
-    <section id="topBar"></section><!--end topBar-->
+    <section id="topBar">
+        <h2 class="hidden">Top Bar</h2>
+    </section><!--end topBar-->
         <section id="headerBox">
             <div id="siteContainer">
                 <header id="mainHeader">
                     <div class="logoHeader">
+                        <h2 class="hidden">Opa Logo</h2>
                         <img src="images/opalogo.png" alt="opalogo" id="logo">
                     </div><!--end logo-->
                 
@@ -23,30 +26,57 @@
                                 <li><a href="#">ABOUT US</a></li>
                                 <li><a href="contact.html">CONTACT US</a></li>
                             </ul>
-                        </nav>
+                     </nav>
                 </header> 
             </div>
-        </section>
-    </section><!--end mainHeader-->
+        </section><!--end mainHeader-->
             <section id="bodyBox">
+                <h2 class="hidden">Content</h2>
             <section id="promo">
-            	<div id="promoText"><p>Promo Text</p></div><!--end promoText-->
-            	<div id="promoImage"><p>Promo Image</p></div><!--end promoImage-->
-            </section><!--end promo-->
-            <section id="productInfo">
-            	<section class="productDesc"><p>Product Image &amp; Text</p></section><!--end productDesc1-->
-                <section class="productDesc"><p>Product Image &amp; Text</p></section><!--end productDesc2-->
-                <section class="productDesc"><p>Product Image &amp; Text</p></section><!--end productDesc3-->
-                <section class="productDesc"><p>Product Image &amp; Text</p></section><!--end productDesc4-->
-            </section><!--end productInfo-->
-</section>
+            	<div class="promoText"><h2>WELCOME</h2><p>Open Monday-Saturday from 11-8</p><p>Closed Sunday</p></div>
+            <div id="promoImage">
+            <h2 class="hidden">Photo of Tom and Klaudia</h2>
+            <img src="images/tomandklaudiaphoto.jpg" width="286" height="251" alt="tomandklaudia">
+            </div>
+            </section>
+            <!--end promoText-->
+            	<!--end promoImage-->
+            <!--end promo-->
+            <div class="row">
+            	<div class="column">
+                    <h2 class="hidden">Opa Store Front Photo</h2>
+                    <img src="images/opastorefront.jpg" width="200" height="300" alt="opastorefront">
+                </div>
+                <div class="column">
+                    <h2 class="hidden">Opa Inside Photo</h2>
+                    <img src="images/opainside.jpg" width="200" height="300" alt="opainside">
+                </div>
+                <div class="column">
+                    <h2 class="hidden">Opa Front Counter Photo</h2>
+                    <img src="images/opafrontcounter.jpg" width="200" height="300" alt="opafrontcounter">
+                </div>
+                <div class="column">
+                    <h2 class="hidden">Opa Behind Counter Photo</h2>
+                    <img src="images/opabehindcounter.jpg" width="200" height="300" alt="opabehindcounter">
+               </div>
+            </div><!--end productInfo-->
+        </section>
     <section id="footerBox">
+        <h2 class="hidden">Footer</h2>
         <footer id="mainFooter">
-        	<div id="footerNav"><p>Footer Nav</p></div><!--end FooterNav-->
-            <div id="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
+              <nav class="footerNav">
+                <h2 class="hidden">Footer Navigation</h2>
+                    <ul>
+                        <li class="selected"><a href="#">HOME</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </nav>
+           <!--end FooterNav-->
+            <div class="copyRight"><p>© OPA EXPRESS 2019</p></div><!--end Copyright-->
         </footer><!--end mainFooter-->
-    </section>
-    </div><!--end siteContainer-->
+    </section><!--end siteContainer-->
 <script src="js/main.js"></script>    
 </body>
 </html>
