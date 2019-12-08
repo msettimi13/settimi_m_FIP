@@ -394,16 +394,32 @@ input, textarea  {
   	color: #b1b9c7;
   	font-size: 21.35px;
 }
+#contentAreaBig 
+{
+  margin-top: 60px;
+  padding-bottom: 40px;
+  margin: 20px;    
+}
 
+#contentAreaBig .menuText
+{
+  width: 10%;
+  padding: 20px;
+  padding-bottom: 40px;
+  display: table-cell;
+  flex-direction: column;
+  text-align: center;
+  }
 
 #contentAreaBig h3 {
 	font-size: 40.75px;
-	padding-left: 350px;
+  text-align: center;
 }
 
 .menuText ul li {
 	font-size: 22.44px;
 	font-family: Geneva;
+  display: block;
 }
 
 .menuText h4 {
